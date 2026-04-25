@@ -104,8 +104,8 @@ style="display:inline-block; padding:10px 15px; background-color:#25D366; color:
     <h2>Biblioteca de Algarrobo</h2>
 
     <div class="imagenes">
-        <img src="image9.png">
-        <img src="image7.png">
+        <img src="image9.png" onclick="abrirModal(this.src)">
+        <img src="image7.png" onclick="abrirModal(this.src)">
     </div>
 
     <p>
@@ -329,5 +329,22 @@ style="display:inline-block; padding:10px 15px; background-color:#25D366; color:
         </div>
         <!-- 🔸 FIN PRODUCTO -->
 
+    <div id="modal" onclick="cerrarModal()"
+     style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; 
+     background:rgba(0,0,0,0.8); justify-content:center; align-items:center;">
+
+    <img id="imgGrande" style="max-width:90%; max-height:90%; border-radius:10px;">
+</div>
+<script>
+function abrirModal(src) {
+    document.getElementById("modal").style.display = "flex";
+    document.getElementById("imgGrande").src = src;
+}
+
+function cerrarModal() {
+    document.getElementById("modal").style.display = "none";
+}
+</script>
+    
 </body>
 </html>
