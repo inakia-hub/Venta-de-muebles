@@ -60,26 +60,39 @@
         ul {
             padding-left: 20px;
         }
-        .precio {
-    font-size: 26px;
-    font-weight: bold;
-    color: #2ecc71;
-    margin: 10px 0 15px 0;
-}
-
-.precio span {
-    font-size: 32px;
-}
-        .nota-precio a {
+.nota-precio {
+    margin: 40px auto;
+    max-width: 500px;
+    background: #fff8e1;
     color: #8a6d3b;
-    text-decoration: none;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #ffe0a3;
+    text-align: center;
     font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-.nota-precio a:hover {
-    text-decoration: underline;
+.contacto {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-    </style>
+
+.contacto a {
+    text-decoration: none;
+    color: #8a6d3b;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ffe0a3;
+    transition: 0.2s;
+}
+
+.contacto a:hover {
+    background: #fff3cd;
+}
 </head>
 
 <body>
@@ -375,10 +388,13 @@ style="display:inline-block; padding:10px 15px; background-color:#25D366; color:
         </div>
         <!-- 🔸 FIN PRODUCTO -->
 
-    <div class="nota-precio">
-    💬 Los precios son charlables. ¡Consultá sin compromiso!<br><br>
-    📞 Tel: 11 3649-1926<br>
-    ✉️ Email: <a href="mailto:inialvarado6@gmail.com">inialvarado6@gmail.com</a>
+<div class="nota-precio">
+    💬 Los precios son charlables. ¡Consultá sin compromiso!
+
+    <div class="contacto">
+        <a href="tel:+5491136491926" class="telefono">📞 11 3649-1926</a>
+        <a href="mailto:inialvarado6@gmail.com" class="email">✉️ inialvarado6@gmail.com</a>
+    </div>
 </div>
     
     <div id="modal" onclick="cerrarModal()"
